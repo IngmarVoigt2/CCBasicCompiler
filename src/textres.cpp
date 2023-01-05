@@ -8,7 +8,7 @@
 
 #include "textres.h"
 
-
+/*
 const char far* TXT_WELCOME = "\nC-Control/BASIC Compiler, Version 1.5\n";
 const char far* TXT_COPYRIGHT =  "Copyright (c) 1998, Conrad Electronic GmbH, "
 										"D-92240 Hirschau\n";
@@ -47,3 +47,4 @@ const char far* TXT_FILENOTFOUND = "Datei nicht gefunden";
 const char far* TXT_INVALIDFILEFORMAT = "ungueltiges Dateiformat";
 
 const char far* TXT_SYNTAXERROR = "Syntaxfehler";
+*/

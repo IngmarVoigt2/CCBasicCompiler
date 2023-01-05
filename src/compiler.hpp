@@ -8,7 +8,7 @@
 #define _COMPILER_HPP
 
 #include <string.h>
-#include <fstream.h>
+#include <fstream>
 
 #pragma warning(disable: 4290)
 
@@ -140,7 +140,7 @@ enum DATATYPES { USERBIT, USERBYTE, USERWORD, USERPORT, USERBYTEPORT,
 	 char line[MAX_LINELEN];
 	 int  scanpos;
 
-	 ofstream* pAsmStream;
+	 std::ofstream* pAsmStream;
 
 	char* pSourcePath;
 

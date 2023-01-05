@@ -4,21 +4,23 @@
 
 ********************************************************************/
 
-#include <iostream.h>
-#include <strstrea.h>
-#include <fstream.h>
+#include <iostream>
+#include <sstream>
+#include <fstream>
 #include <stdio.h>
 #include <conio.h>
 #include <process.h>
 
-#include <dir.h>
-#include <string.h>
+//#include <dir.h>
+#include <string>
 
 #include "..\68HC05B6\codedefs.h"
 #include "compiler.hpp"
 
 #include "comperr.h"
 #include "textres.h"
+
+using namespace std;
 
 
 const char OUTFILE_EXTENSION[] = "dat";

@@ -20,6 +20,8 @@
 
 #define PROGSTART	4
 
+using namespace std;
+
 // *** vordefinierte Bezeichner, Schlüsselworte usw. ***
 
 

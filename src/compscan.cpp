@@ -11,7 +11,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-#include <fstream.h>
+#include <fstream>
 
 #include "compiler.hpp"
 #include "..\68HC05B6\codedefs.h"
@@ -106,6 +106,7 @@ const int USERDATA_LIMITS[] = { MAX_USERBITS, MAX_USERBYTES, MAX_USERWORDS,
 										  0,0 };
 
 
+using namespace std;
 
 
 //-----------------------------------------------------------------
@@ -1167,7 +1168,7 @@ const int USERDATA_LIMITS[] = { MAX_USERBITS, MAX_USERBYTES, MAX_USERWORDS,
   char fullfilename[512];
   
   sprintf(fullfilename, "%s\\%s", pSourcePath, filename);
-  is.open(fullfilename, ios::in|ios::nocreate);
+  is.open(fullfilename, ios::in/*|ios::nocreate*/);
 
   if ( is.fail() )
   {
@@ -1228,7 +1229,7 @@ const int USERDATA_LIMITS[] = { MAX_USERBITS, MAX_USERBYTES, MAX_USERWORDS,
   char fullfilename[512];
 
   sprintf(fullfilename, "%s\\%s", pSourcePath, filename);
-  is.open(fullfilename, ios::in|ios::nocreate);
+  is.open(fullfilename, ios::in/*|ios::nocreate*/);
 
   if ( is.fail() )
   {
